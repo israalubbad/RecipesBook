@@ -21,41 +21,40 @@ rating, preparation time, and calories. Each user has a personalized profile sho
 - Authentication screens including registration, login, and password recovery.
 - Interactive feedback for user actions (e.g., toast messages).
 
-## Screenshots
-## Screenshots
+<h2>Screenshots</h2>
 
-### Splash & Authentication
-- ![Splash Screen](RecipeScreen/splash.jpg)
-- ![Register Screen](RecipeScreen/Regestar.jpg)
-- ![Login Screen](RecipeScreen/Login.jpg)
-- ![Forgot Password Screen](RecipeScreen/ForgotPassword.jpg)
+<h3>Splash & Authentication</h3>
+<img src="RecipeScreen/splash.jpg" width="200"/>
+<img src="RecipeScreen/Regestar.jpg" width="200"/>
+<img src="RecipeScreen/Login.jpg" width="200"/>
+<img src="RecipeScreen/ForgotPassword.jpg" width="200"/>
 
-### Home & Navigation
-- ![Home Screen](RecipeScreen/Home.jpg)
-- ![Recipe Category](RecipeScreen/RecipeCategory.jpg)
-- ![Notifications](RecipeScreen/Notifications.jpg)
-- ![Notifications List](RecipeScreen/NotificationsList.jpg)
-- ![All Followers' Recipes](RecipeScreen/All%20Followers%20Recipe.jpg)
+<h3>Home & Navigation</h3>
+<img src="RecipeScreen/Home.jpg" width="200"/>
+<img src="RecipeScreen/RecipeCategory.jpg" width="200"/>
+<img src="RecipeScreen/Notifications.jpg" width="200"/>
+<img src="RecipeScreen/NotificationsList.jpg" width="200"/>
+<img src="RecipeScreen/All%20Followers%20Recipe.jpg" width="200"/>
 
-### Recipes
-- ![Recipe Details](RecipeScreen/RecipeDetails.jpg)
-- ![Post Recipe](RecipeScreen/PostRecipe.jpg)
-- ![Edit Recipe](RecipeScreen/EditRecipe.jpg)
-- ![Rate Recipe](RecipeScreen/RecipeRate.jpg)
-- ![Recipe Comments](RecipeScreen/RecipeComments.jpg)
-- 
-### Bookmark
-- ![Bookmark Recipes](RecipeScreen/RecipeBookMark.jpg)
-  
-### Search
-- ![Search Recipes](RecipeScreen/RecipeSearch.jpg)
-- ![Search Filter](RecipeScreen/SearchFilter.jpg)
+<h3>Recipes</h3>
+<img src="RecipeScreen/RecipeDetails.jpg" width="200"/>
+<img src="RecipeScreen/PostRecipe.jpg" width="200"/>
+<img src="RecipeScreen/EditRecipe.jpg" width="200"/>
+<img src="RecipeScreen/RecipeRate.jpg" width="200"/>
+<img src="RecipeScreen/RecipeComments.jpg" width="200"/>
 
-### Profile
-- ![My Profile](RecipeScreen/MyProfile.jpg)
-- ![Manage Profile](RecipeScreen/ManageProfile.jpg)
-- ![User Profile](RecipeScreen/UserProfile.jpg)
-- ![Followers User](RecipeScreen/FolowersUser.jpg)
-- ![Settings](RecipeScreen/Settings.jpg)
-- ![Change Password](RecipeScreen/ChangePassword.jpg)
+<h3>Search</h3>
+<img src="RecipeScreen/RecipeSearch.jpg" width="200"/>
+<img src="RecipeScreen/SearchFilter.jpg" width="200"/>
+
+<h3>Bookmark</h3>
+<img src="RecipeScreen/RecipeBookMark.jpg" width="200"/>
+
+<h3>Profile</h3>
+<img src="RecipeScreen/MyProfile.jpg" width="200"/>
+<img src="RecipeScreen/ManageProfile.jpg" width="200"/>
+<img src="RecipeScreen/UserProfile.jpg" width="200"/>
+<img src="RecipeScreen/FolowersUser.jpg" width="200"/>
+<img src="RecipeScreen/Settings.jpg" width="200"/>
+<img src="RecipeScreen/ChangePassword.jpg" width="200"/>
 
