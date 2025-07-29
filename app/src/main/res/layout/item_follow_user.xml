@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="16dp"
+    android:radius="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/profile_image"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/userCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textSize="14sp"
+                android:textColor="#888888" />
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/followBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Follow"-->
+<!--            android:visibility="visible"/>-->
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

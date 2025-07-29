@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/backBT"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/changeImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Image"
+            android:backgroundTint="@color/orange_light"
+            android:textColor="@color/orange_dark"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/profileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/changeImageBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nameIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bioIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/emailIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/bioEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                android:lines="2"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/countryIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/bioIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <Spinner
+                android:id="@+id/countrySp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Country" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/tajawal_medium"
+            android:backgroundTint="@color/orange_dark"
+            android:background="@drawable/tab_background"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/countryIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

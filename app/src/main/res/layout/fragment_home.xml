@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.HomeFragment">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:padding="16dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:background="@drawable/bg_search_view_rounded"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImageIV"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/tajawal_medium"
+        android:text="Welcome, 👋🏻 \n "
+        android:textSize="20sp"
+        android:textColor="@color/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="@+id/userImageIV"
+        app:layout_constraintStart_toEndOf="@id/userImageIV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Make your own food,\n stay at home"
+            android:textColor="@color/gray_light"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userImageIV" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userImageIV" />
+
+<!--    <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--        android:id="@+id/searchView"-->
+<!--        style="@style/MaterialSearchBarLight"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/userImageIV"-->
+<!--        app:mt_dividerColor="@color/orange_primary"-->
+<!--        app:mt_hint="Search recipes…"-->
+<!--        app:mt_hintColor="@color/textColorSecondary"-->
+<!--        app:mt_maxSuggestionsCount="10"-->
+<!--        app:mt_navIconEnabled="false"-->
+<!--        app:mt_placeholder="Search recipes…"-->
+<!--        app:mt_roundedSearchBarEnabled="true"-->
+<!--        app:mt_searchBarColor="@color/white"-->
+<!--        app:mt_speechMode="false"-->
+<!--        app:mt_textColor="@color/black" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAllCaps="false"
+            app:tabBackground="@drawable/tab_background"
+            app:tabGravity="center"
+            app:tabTextAppearance="@style/CustomTabText"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/textColorSecondary"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

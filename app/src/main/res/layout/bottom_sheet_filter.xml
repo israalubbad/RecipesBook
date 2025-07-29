@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded_top"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Time"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ToggleButton
+                android:id="@+id/timeAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="All"
+                android:textOn="All"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/time30min"
+                android:textOff="≤ 30 min"
+                android:textOn="≤ 30 min"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/time1hour"
+                android:textOff="≤ 1 hour"
+                 android:textOn="≤ 1 hour"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/time2hour"
+            android:textOff="≤ 2 hour"
+            android:textOn="≤ 2 hour"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Calories"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ToggleButton
+                android:id="@+id/calAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="All"
+                android:textOn="All"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/calLess300"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="&lt; 300"
+                android:textOn="&lt; 300"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/cal400_800"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="400-800"
+                android:textOn="400-800"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/calMore1000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="> 1000"
+                android:textOn="> 1000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Rate"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ToggleButton
+                android:id="@+id/rate5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="5"
+                android:drawableStart="@drawable/star"
+                android:textOn="5"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/rate4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="4"
+                android:textOn="4"
+                android:drawableStart="@drawable/star"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/rate3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="3"
+                android:textOn="3"
+                android:drawableStart="@drawable/star"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/rate2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="2"
+                android:textOn="2"
+                android:drawableStart="@drawable/star"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/rate1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textOff="1"
+                android:textOn="1"
+                android:drawableStart="@drawable/star"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Category"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ToggleButton
+                android:id="@+id/allBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="All"
+                android:textOn="All"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/breakfastBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Breakfast"
+                android:textOn="Breakfast"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/lunchBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Lunch"
+                android:textOn="Lunch"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/dinnerBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Dinner"
+                android:textOn="Dinner"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginBottom="8dp">
+
+            <ToggleButton
+                android:id="@+id/dessertsBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Desserts"
+                android:textOn="Desserts"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/beveragesBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Beverages"
+                android:textOn="Beverages"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/saladsBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Salads"
+                android:textOn="Salads"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/fastFoodBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Fast Food"
+                android:textOn="Fast Food"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="8dp">
+
+            <ToggleButton
+                android:id="@+id/healthyMealsBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Healthy Meals"
+                android:textOn="Healthy Meals"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/appetizersBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Appetizers"
+                android:textOn="Appetizers"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+            <Space android:layout_width="8dp" android:layout_height="0dp" />
+
+            <ToggleButton
+                android:id="@+id/soupsBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:textOff="Soups"
+                android:textOn="Soups"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/filtersBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Filter"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+
+</ScrollView>

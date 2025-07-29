@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search recipes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/tajawal_medium"
+        android:textColor="@color/orange_primary"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/searchBar"
+            style="@style/MaterialSearchBarDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/filterIV"
+            app:mt_dividerColor="@color/orange_primary"
+            app:mt_hint="Search recipes…"
+            app:mt_hintColor="@color/textColorSecondary"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_navIconEnabled="false"
+            app:mt_placeholder="Search recipes…"
+            app:mt_roundedSearchBarEnabled="true"
+            app:mt_searchBarColor="@color/white"
+            app:mt_speechMode="false"
+            android:layout_marginEnd="10dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp"
+            app:mt_textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/filterIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_filter_view"
+        android:padding="8dp"
+        android:src="@drawable/setting_4"
+        android:contentDescription="Filter"
+        app:layout_constraintTop_toTopOf="@id/searchBar"
+        app:layout_constraintBottom_toBottomOf="@id/searchBar"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Result"
+        android:textSize="16sp"
+        android:fontFamily="@font/tajawal_medium"
+        android:textColor="@color/gray_dark"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvResultCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 results"
+        android:fontFamily="@font/tajawal_medium"
+        android:textSize="12sp"
+        android:textColor="@color/textColorSecondary"
+        app:layout_constraintTop_toTopOf="@id/tvSearchResult"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSearchResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

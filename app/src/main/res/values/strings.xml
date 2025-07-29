@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RecipesBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="meal_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+        <item>Desserts</item>
+        <item>Beverages</item>
+        <item>Healthy Meals</item>
+        <item>Fast Food</item>
+        <item>Appetizers</item>
+        <item>Salads</item>
+        <item>Soups</item>
+    </string-array>
+
+</resources>

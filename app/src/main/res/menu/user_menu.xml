@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Edite"
+        android:icon="@drawable/material_symbols_edit"
+        android:iconTint="@color/orange_primary"
+        android:id="@+id/editeItem"/>
+
+    <item android:title="Delete"
+        android:icon="@drawable/fluent_delete_24_regular"
+        android:iconTint="@color/orange_primary"
+        android:id="@+id/deleteItem"/>
+</menu>

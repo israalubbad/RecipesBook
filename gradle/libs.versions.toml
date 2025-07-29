@@ -1,0 +1,58 @@
+[versions]
+agp = "8.9.1"
+circleimageview = "3.1.0"
+cloudinaryAndroid = "2.3.1"
+firebaseBom = "33.14.0"
+flexbox = "3.0.0"
+googleMaterial = "1.3.0-alpha03"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+materialsearchbar = "0.8.5"
+materialsearchbarVersion = "0.8.5"
+materialVersion = "1.9.0"
+picasso = "2.8"
+credentials = "1.5.0"
+credentialsPlayServicesAuth = "1.5.0"
+googleid = "1.1.1"
+firebaseDatabase = "21.0.0"
+recyclerviewSwipedecorator = "1.2.3"
+something = "1.0.0"
+
+[libraries]
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+cloudinary-android = { module = "com.cloudinary:cloudinary-android", version.ref = "cloudinaryAndroid" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
+flexbox = { module = "com.google.android:flexbox", version.ref = "flexbox" }
+google-firebase-database = { module = "com.google.firebase:firebase-database" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+mancj-materialsearchbar = { module = "com.mancj:materialsearchbar", version.ref = "materialsearchbarVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v130alpha03 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+materialsearchbar = { module = "com.github.mancj:MaterialSearchBar", version.ref = "materialsearchbar" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+recyclerview-swipedecorator = { module = "it.xabaras.android:recyclerview-swipedecorator", version.ref = "recyclerviewSwipedecorator" }
+something = { module = "com.example:something", version.ref = "something" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

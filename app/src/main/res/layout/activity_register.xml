@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".Activitys.Register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBT"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/registerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:text="Create New Account"
+            android:textColor="@color/orange_dark"
+            android:textSize="20dp"
+            android:tint="@color/textColorSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoImageIV"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:id="@+id/logoImageIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo_recipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userNameIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="@color/orange_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerTV">
+
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="User Name"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="#555252" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/orange_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userNameIL">
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="Email"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="#555252" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/orange_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailIL"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="Password"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="#555252" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/comfortPasswordIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/orange_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordIL"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/comfortPasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="Comfort Password"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="#555252" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/countryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="Choose Country"
+            android:textColor="@color/orange_dark"
+            android:textSize="20dp"
+            android:tint="@color/textColorSecondary"
+            app:layout_constraintStart_toStartOf="@id/comfortPasswordIL"
+            app:layout_constraintTop_toBottomOf="@id/comfortPasswordIL"
+            tools:ignore="UseAppTint" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/countriesSpinnerIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/orange_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/countryTV"
+      >
+
+            <Spinner
+                android:id="@+id/countriesSp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:padding="16dp"
+                android:fontFamily="@font/tajawal_medium"
+                app:layout_constraintEnd_toEndOf="@id/comfortPasswordIL"
+                app:layout_constraintStart_toStartOf="@id/comfortPasswordIL"
+                app:layout_constraintTop_toBottomOf="@id/countryTV" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerBt"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/orange_primary"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="@drawable/tab_background"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/countriesSpinnerIL" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerBt"
+            app:layout_constraintVertical_bias="1">
+
+            <TextView
+                android:id="@+id/accountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="You Have Account"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/loginTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="Login"
+                android:textColor="@color/orange_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

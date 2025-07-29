@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activitys.Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Activitys.Login">
+
+        <ImageView
+            android:id="@+id/logoImageIV"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo_recipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="@color/orange_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoImageIV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="Email"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="@color/textColorSecondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/orange_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailInputLayout"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="Password"
+                android:paddingHorizontal="15dp"
+                android:textColorHint="#555252" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rememberSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            app:layout_constraintStart_toStartOf="@id/passwordIL"
+            app:layout_constraintTop_toBottomOf="@id/passwordIL"
+            app:thumbTint="@color/orange_dark"
+            app:trackTint="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/rememberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Remember Me"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/rememberSwitch"
+            app:layout_constraintStart_toEndOf="@id/rememberSwitch"
+            app:layout_constraintTop_toTopOf="@id/rememberSwitch" />
+
+        <Button
+            android:id="@+id/loginBt"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/orange_primary"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Login"
+            android:background="@drawable/tab_background"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rememberSwitch" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Forgot password?"
+            android:textColor="@color/successGreen"
+            app:layout_constraintStart_toStartOf="@+id/loginBt"
+            app:layout_constraintTop_toBottomOf="@id/loginBt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <TextView
+            android:id="@+id/accountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Don't have account"
+
+            />
+
+        <TextView
+            android:id="@+id/registerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="Create Account"
+            android:textColor="@color/orange_dark" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

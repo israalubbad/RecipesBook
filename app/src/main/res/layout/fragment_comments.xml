@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commentsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write your comment..."
+            android:background="@drawable/edit_text_bg"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/tajawal_medium"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="5"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/send"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_bg"
+            android:contentDescription="Send Comment"
+            app:tint="@color/gray_dark" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageRecipeTV"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_circle_white"
+            android:src="@drawable/back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/moreIV"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_circle_white"
+            android:src="@drawable/nrk_more"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ratingIV"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@id/moreIV"
+            android:background="@drawable/bg_circle_white"
+            android:src="@drawable/star"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-24dp"
+            android:background="@drawable/bg_rounded_top"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageRecipeTV">
+
+            <TextView
+                android:id="@+id/nameRecipeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/bookMarkIV"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <ImageView
+                android:id="@+id/bookMarkIV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:src="@drawable/bookmark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/nameRecipeTV"/>
+
+            <TextView
+                android:id="@+id/categoryRecipeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:background="@drawable/design_category"
+                android:textColor="@color/orange_primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descriptionRecipeET"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_stats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoryRecipeTV">
+
+                <TextView
+                    android:id="@+id/ratingRecipeTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:drawableStart="@drawable/star"
+                    android:drawablePadding="8dp"
+                    android:text=""
+                    android:textColor="@color/gray_dark"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/caloriesRecipeTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="🔥"
+                    android:textColor="@color/gray_dark"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/timeRecipeTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:drawableStart="@drawable/time_circle"
+                    android:drawablePadding="8dp"
+                    android:text=""
+                    android:textColor="@color/gray_dark"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descriptionRecipeET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text=""
+                android:textColor="#555"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameRecipeTV" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/ll_stats"
+                app:tabIndicatorColor="@color/orange_primary"
+                app:tabSelectedTextColor="@color/orange_primary"
+                app:tabTextColor="#888">
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

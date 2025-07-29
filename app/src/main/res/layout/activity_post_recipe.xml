@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.PostRecipe">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBT"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_medium"
+                android:gravity="center"
+                android:text="Post recipe"
+                android:textColor="@color/orange_primary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/titleRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/tajawal_medium"
+            android:hint="Recipe title"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/descriptionRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="top"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageRecipeIV"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="12dp"
+            android:background="#EEE"
+            android:scaleType="centerCrop"
+            android:src="@drawable/inputsearch"
+            app:shapeAppearanceOverlay="@style/RoundedCornerImage"></com.google.android.material.imageview.ShapeableImageView>
+
+
+        <EditText
+            android:id="@+id/timeRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Cooking time (minutes)"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/caloriesRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Calories"
+            android:padding="16dp"
+            android:spinnerMode="dropdown"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/tajawal_medium"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/ingredientsRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="top"
+            android:hint="Ingredients (each item on a new line)"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/stepsRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="top"
+            android:hint="Steps (each step on a new line)"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/viedoUrlRecipeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="top"
+            android:hint="Viedo Url"
+            android:inputType="textUri"
+            android:minLines="5"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addRecipeBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_background"
+            android:backgroundTint="#FFA500"
+            android:fontFamily="@font/tajawal_medium"
+            android:padding="12dp"
+            android:text="Add Recipe"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/editeRecipeBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_background"
+            android:backgroundTint="#FFA500"
+            android:fontFamily="@font/tajawal_medium"
+            android:padding="12dp"
+            android:text="Edite Recipe"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

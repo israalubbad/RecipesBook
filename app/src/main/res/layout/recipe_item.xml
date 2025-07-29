@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="8dp"
+    android:padding="10dp"
+    android:id="@+id/recipeItem"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+
+        >
+        <ImageView
+            android:id="@+id/moreIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/nrk_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tint="@color/textColorPrimary" />
+]
+        <ImageView
+            android:id="@+id/imageIV"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text=""
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/bookMarkIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageIV" />
+
+        <TextView
+            android:id="@+id/starTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/star"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text=""
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:drawableStart="@drawable/time_circle"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text=""
+            android:textColor="@color/textColorSecondary"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@id/caloriesRecipeTV"
+            app:layout_constraintStart_toEndOf="@id/starTV"
+            app:layout_constraintTop_toTopOf="@id/starTV" />
+
+        <TextView
+            android:id="@+id/caloriesRecipeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="🔥 "
+            android:textColor="#666"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/timeTV"
+            app:layout_constraintTop_toTopOf="@id/timeTV" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageIV"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/profile_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/starTV"
+            app:layout_constraintTop_toBottomOf="@id/starTV" />
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text=""
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/userImageIV"
+            app:layout_constraintStart_toEndOf="@id/userImageIV"
+            app:layout_constraintTop_toTopOf="@id/userImageIV" />
+
+        <ImageView
+            android:id="@+id/bookMarkIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="Bookmark"
+            android:scaleType="fitCenter"
+            android:src="@drawable/unbookmark"
+            app:layout_constraintBottom_toBottomOf="@id/titleTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

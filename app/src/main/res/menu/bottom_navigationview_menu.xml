@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:icon="@drawable/home"
+        android:iconTint="#D1D5DB"
+        android:id="@+id/homeItem"/>
+
+    <item android:title="Search"
+        android:icon="@drawable/search"
+        android:iconTint="#D1D5DB"
+        android:id="@+id/searchItem"/>
+
+<!--    <item android:title="Post"-->
+<!--        android:icon="@drawable/plus"-->
+<!--        android:iconTint="#D1D5DB"-->
+<!--        android:id="@+id/postItem"/>-->
+
+    <item
+        android:id="@+id/disabledItem"
+        android:title="" />
+
+    <item android:title="BookMark"
+        android:icon="@drawable/bookmark"
+        android:iconTint="#D1D5DB"
+        android:id="@+id/bookMarkItem"/>
+
+
+
+    <item android:title="Profile"
+        android:icon="@drawable/vector__2_"
+        android:iconTint="#D1D5DB"
+        android:id="@+id/profileItem"/>
+</menu>

@@ -1,0 +1,38 @@
+<!-- res/layout/rating_bottom_sheet.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this Recipe"
+        android:textSize="18sp"
+        android:fontFamily="@font/tajawal_medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/ThemeOverlay.AppCompat.RatingBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:fontFamily="@font/tajawal_medium"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:background="@drawable/design_category"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
